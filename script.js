@@ -3,44 +3,36 @@ const menuButton = document.querySelector('.menu-toggle');
 const nav = document.querySelector('.nav');
 
 menuButton.addEventListener('click', () => {
-    nav.classList.toggle('open');
-    menuButton.setAttribute(
-        'aria-expanded',
-        nav.classList.contains('open')
-    );
+  const open = nav.classList.toggle('open');
+  menuButton.setAttribute('aria-expanded', String(open));
+  menuButton.textContent = open ? '✕' : '☰';
 });
 
 document.querySelectorAll('.nav a').forEach(link => {
-    link.addEventListener('click', () => {
-        nav.classList.remove('open');
-        menuButton.setAttribute('aria-expanded', 'false');
-    });
+  link.addEventListener('click', () => {
+    nav.classList.remove('open');
+    menuButton.setAttribute('aria-expanded', 'false');
+    menuButton.textContent = '☰';
+  });
 });
 
-// Animaciones al aparecer los elementos en pantalla
-const observer = new IntersectionObserver(entries => {
+if ('IntersectionObserver' in window) {
+  const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            entry.target.classList.add('visible');
-            observer.unobserve(entry.target);
-        }
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      }
     });
-}, {
-    threshold: 0.12
-});
+  }, { threshold: 0.12 });
 
-document.querySelectorAll('.reveal').forEach(element => {
+  document.querySelectorAll('.reveal').forEach(element => {
     observer.observe(element);
-});
+  });
+} else {
+  document.querySelectorAll('.reveal').forEach(element => {
+    element.classList.add('visible');
+  });
+}
 
-// Selección automática del plan contratado
-document.querySelectorAll('.plan-button').forEach(button => {
-    button.addEventListener('click', () => {
-        const plan = button.dataset.plan;
-        document.getElementById('plan-select').value = plan;
-    });
-});
-
-// Año automático del pie de página
-document.getElementById('year').textContent =
-    new Date().getFullYear();
+document.getElementById('year').textContent = new Date().getFullYear();

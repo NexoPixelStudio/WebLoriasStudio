@@ -3,366 +3,282 @@
 <html lang="es">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="WebLoriaStudio: creamos y mejoramos páginas web profesionales para tu negocio.">
-<title>WebLoriaStudio | Diseño Web Profesional</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#101522">
+<meta name="description" content="WebLoriaStudio crea y mejora páginas web profesionales para negocios, autónomos y marcas.">
+<title>WebLoriaStudio | Creamos webs para tu negocio</title>
 <link rel="stylesheet" href="styles.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
-
 <body>
 
-<header>
-    <a href="#inicio" class="logo">WebLoria<span>Studio.</span></a>
-
-    <button class="menu-toggle" aria-label="Abrir menú">☰</button>
-
-    <nav class="nav">
-        <a href="#servicios">Servicios</a>
-        <a href="#trabajos">Ejemplos</a>
-        <a href="#planes">Planes</a>
-        <a href="#contacto" class="nav-button">Contactar ↗</a>
-    </nav>
+<header class="header">
+  <a class="logo" href="#inicio">WebLoria<span>Studio.</span></a>
+  <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
+  <nav class="nav">
+    <a href="#servicios">Servicios</a>
+    <a href="#proyectos">Ejemplos</a>
+    <a href="#planes">Precios</a>
+    <a href="#contacto" class="nav-cta">Contactar ↗</a>
+  </nav>
 </header>
 
+<main>
 <section class="hero" id="inicio">
-    <div class="hero-content reveal">
-        <span class="tag">✦ ESTUDIO DIGITAL CREATIVO</span>
-
-        <h1>
-            Tu negocio merece una web
-            <span>extraordinaria.</span>
-        </h1>
-
-        <p>
-            Mejoramos tu página web actual o creamos una nueva
-            desde cero. Diseños modernos, profesionales y adaptados
-            a las necesidades de tu negocio.
-        </p>
-
-        <div class="hero-buttons">
-            <a href="#contacto" class="btn primary">Quiero mi página web ↗</a>
-            <a href="#trabajos" class="btn secondary">Ver ejemplos ↓</a>
-        </div>
-
-        <div class="hero-note">
-            ✓ Diseño profesional &nbsp; ✓ Adaptable a móviles
-        </div>
+  <div class="hero-content reveal">
+    <span class="eyebrow">✦ ESTUDIO DIGITAL CREATIVO</span>
+    <h1>Hacemos que tu negocio <span>destaque en internet.</span></h1>
+    <p>¿Necesitas una página web o quieres mejorar la que ya tienes? Nosotros te ayudamos a construir una presencia digital moderna, profesional y atractiva.</p>
+    <div class="hero-actions">
+      <a href="#planes" class="button primary">Ver nuestros planes ↗</a>
+      <a href="#proyectos" class="button outline">Ver ejemplos</a>
     </div>
-
-    <div class="hero-visual reveal">
-        <div class="visual-card">
-            <div class="visual-top">
-                <span>● ● ●</span>
-                <span>tuempresa.com</span>
-            </div>
-            <div class="visual-site">
-                <div class="visual-brand">STUDIO<span>.</span></div>
-                <small>CREATIVIDAD Y ESTRATEGIA</small>
-                <h2>Ideas que<br><i>inspiran.</i></h2>
-                <p>Diseñamos experiencias digitales para ti.</p>
-                <div class="visual-line"></div>
-                <div class="visual-footer">DESCUBRIR MÁS ↗</div>
-            </div>
+    <div class="trust-line">✦ Diseño moderno · Adaptación móvil · Atención personalizada</div>
+  </div>
+  <div class="hero-art reveal">
+    <div class="mockup">
+      <div class="browser-bar"><span>● ● ●</span><span>www.tunegocio.com</span></div>
+      <div class="mockup-page">
+        <div class="mockup-nav">STUDIO<span>.</span><small>INICIO &nbsp; SERVICIOS &nbsp; CONTACTO</small></div>
+        <div class="mockup-content">
+          <small>DISEÑAMOS TU FUTURO</small>
+          <h2>Ideas que<br><i>se convierten</i><br>en realidad.</h2>
+          <p>Una presencia digital a la altura de tu negocio.</p>
+          <span class="mockup-link">DESCUBRIR MÁS ↗</span>
         </div>
-        <div class="floating floating-one">✦ Diseño exclusivo</div>
-        <div class="floating floating-two">● Adaptada a móvil</div>
+      </div>
     </div>
+    <div class="floating-note note-one">✦ Diseño profesional</div>
+    <div class="floating-note note-two">✓ Adaptada a móviles</div>
+  </div>
 </section>
 
-<div class="features">
-    <span>01 · DISEÑO MODERNO</span>
-    <span>02 · EXPERIENCIA MÓVIL</span>
-    <span>03 · ATENCIÓN PERSONALIZADA</span>
-    <span>04 · TU NEGOCIO PRIMERO</span>
+<div class="ticker">
+  <span>DISEÑO WEB</span><span>✦</span>
+  <span>CREACIÓN DIGITAL</span><span>✦</span>
+  <span>RENOVACIÓN WEB</span><span>✦</span>
+  <span>DISEÑO RESPONSIVE</span>
 </div>
 
 <section class="section" id="servicios">
-    <div class="section-heading reveal">
-        <span class="tag">NUESTROS SERVICIOS</span>
-        <h2>Hacemos que tu negocio<br><span>destaque en internet.</span></h2>
-        <p>Soluciones digitales pensadas para dar una mejor imagen a tu empresa.</p>
-    </div>
-
-    <div class="service-grid">
-        <article class="service-card reveal">
-            <div class="service-icon">✳</div>
-            <small>01 / RENOVACIÓN</small>
-            <h3>Mejoramos tu web</h3>
-            <p>
-                Renovamos páginas antiguas, mejoramos su diseño,
-                organización, navegación y experiencia de usuario.
-            </p>
-            <a href="#contacto">Mejorar mi web ↗</a>
-        </article>
-
-        <article class="service-card featured reveal">
-            <div class="service-icon">↗</div>
-            <small>02 / CREACIÓN</small>
-            <h3>Creamos tu web</h3>
-            <p>
-                Diseñamos desde cero una página web adaptada
-                a tu negocio, tus objetivos y tu identidad.
-            </p>
-            <a href="#contacto">Crear mi web ↗</a>
-        </article>
-
-        <article class="service-card reveal">
-            <div class="service-icon">◎</div>
-            <small>03 / IMAGEN DIGITAL</small>
-            <h3>Haz crecer tu marca</h3>
-            <p>
-                Mejoramos la presentación de tus servicios
-                para transmitir confianza y profesionalidad.
-            </p>
-            <a href="#contacto">Quiero destacar ↗</a>
-        </article>
-    </div>
+  <div class="section-heading reveal">
+    <span class="eyebrow">LO QUE HACEMOS</span>
+    <h2>Tu idea merece una <span>gran presencia digital.</span></h2>
+    <p>Soluciones web para que tu negocio tenga una imagen cuidada y profesional.</p>
+  </div>
+  <div class="service-grid">
+    <article class="service-card reveal">
+      <div class="service-icon">✳</div>
+      <span class="card-number">01 / RENOVACIÓN</span>
+      <h3>Mejoramos tu web</h3>
+      <p>Transformamos páginas antiguas en experiencias modernas, claras y fáciles de utilizar.</p>
+      <a href="#contacto">Quiero renovar mi web ↗</a>
+    </article>
+    <article class="service-card highlighted reveal">
+      <div class="service-icon">↗</div>
+      <span class="card-number">02 / CREACIÓN</span>
+      <h3>Creamos tu web</h3>
+      <p>Diseñamos una página desde cero, adaptada a tu negocio, marca y objetivos.</p>
+      <a href="#contacto">Quiero una web nueva ↗</a>
+    </article>
+    <article class="service-card reveal">
+      <div class="service-icon">◎</div>
+      <span class="card-number">03 / PRESENTACIÓN</span>
+      <h3>Impulsa tu imagen</h3>
+      <p>Presentamos tus productos y servicios de una manera atractiva y organizada.</p>
+      <a href="#contacto">Mejorar mi imagen ↗</a>
+    </article>
+  </div>
 </section>
 
-<section class="section examples" id="trabajos">
-    <div class="section-heading reveal">
-        <span class="tag">ANTES Y DESPUÉS</span>
-        <h2>Una transformación<br><span>que se nota.</span></h2>
-        <p>Ejemplos visuales conceptuales de cómo puede cambiar una página web.</p>
-    </div>
-
-    <div class="comparison">
-        <article class="example-card reveal">
-            <span class="before-label">ANTES</span>
-            <div class="example-before">
-                <h3>MI EMPRESA</h3>
-                <hr>
-                <h2>Bienvenidos a nuestra página web</h2>
-                <p>Ofrecemos diferentes servicios para nuestros clientes.</p>
-                <button>Más información</button>
-                <div class="old-blocks">
-                    <i></i><i></i><i></i>
-                </div>
-            </div>
-            <p>Diseño anticuado, poca organización y una imagen poco diferenciada.</p>
-        </article>
-
-        <article class="example-card reveal">
-            <span class="after-label">DESPUÉS</span>
-            <div class="example-after">
-                <div class="example-nav">ATELIER<span>.</span> <small>INICIO · SERVICIOS · CONTACTO</small></div>
-                <div class="example-main">
-                    <small>DISEÑO CON PERSONALIDAD</small>
-                    <h2>Tu marca.<br><i>Tu futuro.</i></h2>
-                    <p>Una experiencia digital creada para destacar.</p>
-                    <button>DESCUBRIR MÁS ↗</button>
-                </div>
-                <div class="example-decoration">✳</div>
-            </div>
-            <p>Diseño moderno, jerarquía clara y una presentación profesional.</p>
-        </article>
-    </div>
-
-    <p class="disclaimer">
-        Estos ejemplos son demostraciones conceptuales, no proyectos reales de clientes.
-    </p>
-</section>
-
-<section class="section process">
-    <div class="section-heading reveal">
-        <span class="tag">CÓMO TRABAJAMOS</span>
-        <h2>Tu nueva web en <span>cuatro pasos.</span></h2>
-    </div>
-
-    <div class="steps">
-        <article class="step reveal">
-            <span>01</span>
-            <h3>Nos contactas</h3>
-            <p>Nos explicas tu negocio y qué necesitas.</p>
-        </article>
-        <article class="step reveal">
-            <span>02</span>
-            <h3>Preparamos tu proyecto</h3>
-            <p>Definimos el diseño, los servicios y el presupuesto.</p>
-        </article>
-        <article class="step reveal">
-            <span>03</span>
-            <h3>Diseñamos</h3>
-            <p>Construimos tu web y revisamos contigo el resultado.</p>
-        </article>
-        <article class="step reveal">
-            <span>04</span>
-            <h3>Publicamos</h3>
-            <p>Con tu aprobación, dejamos la página lista.</p>
-        </article>
-    </div>
-</section>
-
-<section class="section pricing" id="planes">
-    <div class="section-heading reveal">
-        <span class="tag">NUESTROS PLANES</span>
-        <h2>Elige el plan <span>ideal para ti.</span></h2>
-        <p>Precios iniciales orientativos por proyecto.</p>
-    </div>
-
-    <div class="pricing-grid">
-
-        <article class="price-card reveal">
-            <span class="plan-name">ESENCIAL</span>
-            <h3>Presencia online</h3>
-            <p>Para comenzar a tener presencia profesional.</p>
-            <div class="price">149€</div>
-            <span class="per-project">Por proyecto</span>
-            <hr>
-            <ul>
-                <li>✓ Página web de una sección</li>
-                <li>✓ Diseño adaptable a móviles</li>
-                <li>✓ Información de tu negocio</li>
-                <li>✓ Enlaces a redes sociales</li>
-                <li>✓ Una ronda de cambios</li>
-            </ul>
-            <a href="#contacto" class="btn secondary plan-button" data-plan="Esencial">Solicitar plan ↗</a>
-        </article>
-
-        <article class="price-card popular reveal">
-            <span class="popular-label">MÁS ELEGIDO</span>
-            <span class="plan-name">PROFESIONAL</span>
-            <h3>Tu negocio en grande</h3>
-            <p>Para empresas que quieren destacar.</p>
-            <div class="price">299€</div>
-            <span class="per-project">Por proyecto</span>
-            <hr>
-            <ul>
-                <li>✓ Hasta 5 secciones o páginas</li>
-                <li>✓ Diseño personalizado</li>
-                <li>✓ Formulario de contacto</li>
-                <li>✓ SEO básico</li>
-                <li>✓ Dos rondas de cambios</li>
-            </ul>
-            <a href="#contacto" class="btn primary plan-button" data-plan="Profesional">Solicitar plan ↗</a>
-        </article>
-
-        <article class="price-card reveal">
-            <span class="plan-name">PREMIUM</span>
-            <h3>Experiencia completa</h3>
-            <p>Para marcas que buscan una web avanzada.</p>
-            <div class="price">499€</div>
-            <span class="per-project">Por proyecto</span>
-            <hr>
-            <ul>
-                <li>✓ Hasta 8 secciones o páginas</li>
-                <li>✓ Diseño avanzado personalizado</li>
-                <li>✓ Animaciones visuales</li>
-                <li>✓ SEO básico</li>
-                <li>✓ Tres rondas de cambios</li>
-            </ul>
-            <a href="#contacto" class="btn secondary plan-button" data-plan="Premium">Solicitar plan ↗</a>
-        </article>
-
-    </div>
-
-    <p class="disclaimer">
-        Precios orientativos sujetos a presupuesto y alcance definitivo.
-        No incluyen dominio, alojamiento, licencias, mantenimiento ni servicios externos,
-        salvo acuerdo expreso.
-    </p>
-</section>
-
-<section class="cta">
-    <div class="reveal">
-        <span class="tag">TU PROYECTO EMPIEZA AQUÍ</span>
-        <h2>¿Preparado para mejorar<br>tu presencia digital?</h2>
-    </div>
-    <a href="#contacto" class="btn light">Hablemos de tu web ↗</a>
-</section>
-
-<section class="section contact" id="contacto">
-    <div class="contact-info reveal">
-        <span class="tag">CONTACTO</span>
-        <h2>Cuéntanos tu <span>idea.</span></h2>
-        <p>
-            Explícanos qué necesitas y nos pondremos en contacto
-            contigo para preparar una propuesta.
-        </p>
-
-        <div class="email-box">
-            <span>✉</span>
-            <div>
-                <small>NUESTRO CORREO</small>
-                <a href="mailto:webloriastudio@gmail.com">
-                    webloriastudio@gmail.com
-                </a>
-            </div>
+<section class="section dark-section" id="proyectos">
+  <div class="section-heading reveal">
+    <span class="eyebrow">EJEMPLOS VISUALES</span>
+    <h2>De una web básica a una <span>experiencia profesional.</span></h2>
+    <p>Así puede transformarse la presentación digital de un negocio.</p>
+  </div>
+  <div class="examples-grid">
+    <article class="example-card reveal">
+      <span class="before">ANTES</span>
+      <div class="demo old-demo">
+        <h3>MI NEGOCIO</h3>
+        <hr>
+        <h2>Bienvenidos a nuestra página</h2>
+        <p>Estos son nuestros servicios y productos.</p>
+        <button>Más información</button>
+        <div class="old-boxes"><i></i><i></i><i></i></div>
+      </div>
+      <p>Diseño poco organizado y presentación anticuada.</p>
+    </article>
+    <article class="example-card reveal">
+      <span class="after">DESPUÉS</span>
+      <div class="demo new-demo">
+        <div class="demo-nav">ATELIER<span>.</span><small>INICIO · SERVICIOS · CONTACTO</small></div>
+        <div class="demo-content">
+          <small>CREATIVIDAD Y CALIDAD</small>
+          <h2>Tu marca.<br><i>Tu futuro.</i></h2>
+          <p>Diseñamos experiencias para destacar.</p>
+          <button>DESCUBRIR MÁS ↗</button>
         </div>
-    </div>
-
-    <form class="contact-form reveal"
-          action="https://formsubmit.co/webloriastudio@gmail.com"
-          method="POST">
-
-        <input type="hidden" name="_subject" value="Nueva solicitud WebLoriaStudio">
-        <input type="hidden" name="_template" value="table">
-        <input type="hidden" name="_captcha" value="true">
-
-        <h3>Solicita tu presupuesto</h3>
-
-        <label>Nombre completo
-            <input type="text" name="Nombre" required maxlength="100"
-                   placeholder="Tu nombre">
-        </label>
-
-        <label>Correo electrónico
-            <input type="email" name="Email" required maxlength="160"
-                   placeholder="tu@email.com">
-        </label>
-
-        <label>¿Qué necesitas?
-            <select name="Servicio" required>
-                <option value="">Selecciona una opción</option>
-                <option>Mejorar mi página web</option>
-                <option>Crear una página desde cero</option>
-                <option>Asesoramiento</option>
-            </select>
-        </label>
-
-        <label>Plan de interés
-            <select name="Plan" id="plan-select">
-                <option>Por definir</option>
-                <option>Esencial</option>
-                <option>Profesional</option>
-                <option>Premium</option>
-            </select>
-        </label>
-
-        <label>Cuéntanos tu proyecto
-            <textarea name="Mensaje" rows="5" required maxlength="3000"
-                      placeholder="Describe tu negocio y lo que quieres conseguir..."></textarea>
-        </label>
-
-        <label class="consent">
-            <input type="checkbox" required>
-            Acepto el tratamiento de mis datos para gestionar esta solicitud.
-            <a href="privacidad.html" target="_blank">Política de privacidad</a>.
-        </label>
-
-        <button type="submit" class="btn primary submit">
-            Enviar solicitud ↗
-        </button>
-
-        <small class="form-note">
-            Tu solicitud se enviará mediante FormSubmit.
-            La primera vez tendrás que confirmar el correo de destino.
-        </small>
-    </form>
+      </div>
+      <p>Diseño cuidado, moderno y adaptado a cada pantalla.</p>
+    </article>
+  </div>
+  <p class="disclaimer">Ejemplos ilustrativos, no son trabajos reales de clientes.</p>
 </section>
+
+<section class="section">
+  <div class="section-heading reveal">
+    <span class="eyebrow">PROCESO DE TRABAJO</span>
+    <h2>Fácil, claro y <span>sin complicaciones.</span></h2>
+  </div>
+  <div class="steps">
+    <article class="step reveal"><span>01</span><h3>Nos cuentas tu idea</h3><p>Explícanos qué negocio tienes y qué necesitas.</p></article>
+    <article class="step reveal"><span>02</span><h3>Elegimos el plan</h3><p>Definimos el alcance y los detalles del proyecto.</p></article>
+    <article class="step reveal"><span>03</span><h3>Diseñamos tu web</h3><p>Preparamos tu página y revisamos el resultado contigo.</p></article>
+    <article class="step reveal"><span>04</span><h3>La publicamos</h3><p>Tras tu aprobación, dejamos tu proyecto listo.</p></article>
+  </div>
+</section>
+
+<section class="section dark-section" id="planes">
+  <div class="section-heading reveal">
+    <span class="eyebrow">PRECIOS TRANSPARENTES</span>
+    <h2>Encuentra tu <span>plan ideal.</span></h2>
+    <p>Elige la solución que mejor se adapte a tu negocio.</p>
+  </div>
+
+  <div class="pricing-grid">
+    <article class="price-card reveal">
+      <span class="plan-label">ESENCIAL</span>
+      <h3>Empieza online</h3>
+      <p>Para pequeños negocios que necesitan una primera presencia web.</p>
+      <div class="price">57,99 €</div>
+      <span class="price-note">Pago por proyecto</span>
+      <hr>
+      <ul>
+        <li>✓ Una página web sencilla</li>
+        <li>✓ Diseño adaptable a móviles</li>
+        <li>✓ Información de tu negocio</li>
+        <li>✓ Enlaces a redes sociales</li>
+        <li>✓ Una ronda de cambios</li>
+      </ul>
+      <a class="button outline full" href="https://buy.stripe.com/3cI6oJ6O9dQdf0k2Py6Ri04">Contratar por 57,99 € ↗</a>
+    </article>
+
+    <article class="price-card featured-price reveal">
+      <span class="popular">MÁS ELEGIDO</span>
+      <span class="plan-label">PROFESIONAL</span>
+      <h3>Destaca tu negocio</h3>
+      <p>Para negocios que quieren una web más completa y personalizada.</p>
+      <div class="price">110,99 €</div>
+      <span class="price-note">Pago por proyecto</span>
+      <hr>
+      <ul>
+        <li>✓ Hasta 5 secciones</li>
+        <li>✓ Diseño personalizado</li>
+        <li>✓ Formulario de contacto</li>
+        <li>✓ SEO básico</li>
+        <li>✓ Dos rondas de cambios</li>
+      </ul>
+      <a class="button primary full" href="https://buy.stripe.com/4gM14p3BXcM9dWg2Py6Ri05">Contratar por 110,99 € ↗</a>
+    </article>
+
+    <article class="price-card reveal">
+      <span class="plan-label">PREMIUM</span>
+      <h3>Experiencia avanzada</h3>
+      <p>Para marcas que buscan una presentación digital más completa.</p>
+      <div class="price">147,99 €</div>
+      <span class="price-note">Pago por proyecto</span>
+      <hr>
+      <ul>
+        <li>✓ Hasta 8 secciones</li>
+        <li>✓ Diseño avanzado personalizado</li>
+        <li>✓ Animaciones visuales</li>
+        <li>✓ SEO básico</li>
+        <li>✓ Tres rondas de cambios</li>
+      </ul>
+      <a class="button outline full" href="https://buy.stripe.com/28E5kF3BXaE119uduc6Ri06">Contratar por 147,99 € ↗</a>
+    </article>
+  </div>
+  <p class="disclaimer">Precios por proyecto, sujetos a confirmación del alcance. No incluyen dominio, alojamiento, licencias, mantenimiento ni servicios externos, salvo acuerdo escrito. Consulta las condiciones antes de pagar.</p>
+</section>
+
+<section class="banner">
+  <div>
+    <span class="eyebrow">ES HORA DE DAR EL SIGUIENTE PASO</span>
+    <h2>Tu próximo proyecto<br>empieza con una idea.</h2>
+  </div>
+  <a href="#contacto" class="button light-button">Cuéntanos tu proyecto ↗</a>
+</section>
+
+<section class="section contact-section" id="contacto">
+  <div class="contact-copy reveal">
+    <span class="eyebrow">HABLEMOS</span>
+    <h2>Cuéntanos qué quieres <span>crear.</span></h2>
+    <p>Rellena el formulario y explícanos tu proyecto. Nos pondremos en contacto contigo para hablar de los siguientes pasos.</p>
+    <div class="contact-email">
+      <span>✉</span>
+      <div><small>ESCRÍBENOS</small><a href="mailto:webloriastudio@gmail.com">webloriastudio@gmail.com</a></div>
+    </div>
+  </div>
+
+  <form class="contact-form reveal" action="https://formsubmit.co/webloriastudio@gmail.com" method="POST">
+    <input type="hidden" name="_subject" value="Nueva solicitud - WebLoriaStudio">
+    <input type="hidden" name="_template" value="table">
+    <input type="hidden" name="_captcha" value="true">
+
+    <h3>Solicita información</h3>
+    <label>Nombre completo
+      <input name="Nombre" type="text" maxlength="100" required placeholder="Tu nombre">
+    </label>
+    <label>Correo electrónico
+      <input name="Email" type="email" maxlength="160" required placeholder="tu@email.com">
+    </label>
+    <label>Tipo de proyecto
+      <select name="Servicio" required>
+        <option value="">Selecciona una opción</option>
+        <option>Crear una página web</option>
+        <option>Mejorar una página existente</option>
+        <option>Otro servicio</option>
+      </select>
+    </label>
+    <label>Plan que te interesa
+      <select name="Plan">
+        <option>Por definir</option>
+        <option>Esencial - 57,99 €</option>
+        <option>Profesional - 110,99 €</option>
+        <option>Premium - 147,99 €</option>
+      </select>
+    </label>
+    <label>Cuéntanos tu idea
+      <textarea name="Mensaje" rows="5" maxlength="3000" required placeholder="¿Cómo es tu negocio? ¿Qué quieres que tenga tu página web?"></textarea>
+    </label>
+    <label class="consent">
+      <input type="checkbox" name="Aceptacion_privacidad" value="Aceptada" required>
+      <span>He leído la <a href="privacidad.html" target="_blank">política de privacidad</a> y solicito que contacten conmigo para gestionar mi petición.</span>
+    </label>
+    <button class="button primary full" type="submit">Enviar mi solicitud ↗</button>
+    <small class="form-note">El envío utiliza FormSubmit. Tendrás que confirmar el correo de destino en su primer envío.</small>
+  </form>
+</section>
+</main>
 
 <footer>
-    <div class="footer-main">
-        <a href="#inicio" class="logo">WebLoria<span>Studio.</span></a>
-        <p>Diseñamos webs para negocios con ganas de crecer.</p>
-        <a href="mailto:webloriastudio@gmail.com">webloriastudio@gmail.com</a>
+  <div class="footer-main">
+    <div><a class="logo" href="#inicio">WebLoria<span>Studio.</span></a><p>Diseñamos experiencias digitales para negocios.</p></div>
+    <div class="footer-links">
+      <a href="#servicios">Servicios</a>
+      <a href="#planes">Planes</a>
+      <a href="#contacto">Contacto</a>
+      <a href="privacidad.html">Privacidad</a>
     </div>
-    <div class="footer-bottom">
-        <span>© <span id="year"></span> WebLoriaStudio</span>
-        <a href="privacidad.html">Política de privacidad</a>
-    </div>
+    <a href="mailto:webloriastudio@gmail.com">webloriastudio@gmail.com</a>
+  </div>
+  <div class="footer-bottom">
+    <span>© <span id="year"></span> WebLoriaStudio.</span>
+    <span>Todos los derechos reservados.</span>
+  </div>
 </footer>
 
 <script src="script.js"></script>

@@ -1,0 +1,265 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bar SD Cal Mellado | Constantí</title>
+<meta name="description" content="Bar SD Cal Mellado en Constantí. Cocina tradicional, callos, rabo de toro y almuerzos caseros.">
+<style>
+:root{
+ --dark:#211a15;--brown:#493326;--gold:#d99a50;
+ --cream:#faf5ed;--muted:#77695c;--white:#fff;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Arial,sans-serif;background:var(--cream);color:var(--dark)}
+header{background:var(--dark);color:white;padding:18px 7%;
+ display:flex;justify-content:space-between;align-items:center;
+ position:sticky;top:0;z-index:20;gap:20px}
+.logo{font-family:Georgia,serif;font-size:23px;font-weight:bold}
+.logo span{color:var(--gold)}
+nav{display:flex;gap:22px;flex-wrap:wrap}
+nav a{color:white;text-decoration:none;font-size:14px}
+nav a:hover{color:var(--gold)}
+.hero{min-height:620px;padding:90px 9%;display:flex;align-items:center;
+ background:linear-gradient(90deg,#1c140ee8,#1c140e55),
+ url('https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=1800&q=85') center/cover}
+.hero-content{max-width:680px;color:white}
+.eyebrow{color:#efb66e;text-transform:uppercase;letter-spacing:3px;font-size:12px}
+h1,h2,h3{font-family:Georgia,serif}
+h1{font-size:clamp(44px,7vw,78px);line-height:1.05;margin:22px 0}
+.hero p{font-size:18px;line-height:1.8;color:#eee}
+.actions{display:flex;gap:13px;flex-wrap:wrap;margin-top:28px}
+.btn{display:inline-block;text-decoration:none;padding:15px 22px;
+ border-radius:5px;font-weight:bold;transition:.25s}
+.btn:hover{transform:translateY(-3px)}
+.gold{background:var(--gold);color:#211a15}
+.outline{border:1px solid white;color:white}
+.darkbtn{background:var(--dark);color:white}
+section{padding:85px 8%}
+.heading{text-align:center;margin-bottom:40px}
+.heading small{color:#ad7135;text-transform:uppercase;letter-spacing:3px}
+.heading h2{font-size:clamp(32px,4vw,46px);margin-top:12px}
+.intro{max-width:760px;margin:auto;text-align:center;line-height:1.9;color:var(--muted)}
+.menu{background:#fff}
+.menu-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:22px;max-width:1000px;margin:auto}
+.menu-card{background:var(--cream);padding:27px;border-radius:9px}
+.menu-card h3{font-size:25px;border-bottom:1px solid #ddcbb7;padding-bottom:14px;margin-bottom:15px}
+.dish{display:flex;justify-content:space-between;gap:15px;padding:13px 0;border-bottom:1px dashed #d7c7b6}
+.dish:last-child{border:0}
+.dish strong{font-size:14px}
+.price{color:#a66a2e;font-weight:bold;font-size:13px;white-space:nowrap}
+.menu-note{text-align:center;font-size:13px;color:var(--muted);margin:28px auto 0;max-width:700px;line-height:1.7}
+.specials{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.special{background:white;border-radius:9px;overflow:hidden;box-shadow:0 8px 28px #38281912}
+.special img{width:100%;height:220px;object-fit:cover}
+.special div{padding:22px}
+.special h3{font-size:23px;margin-bottom:9px}
+.special p{color:var(--muted);line-height:1.6;font-size:14px}
+.about{background:var(--dark);color:white;display:grid;
+ grid-template-columns:1fr 1fr;gap:50px;align-items:center}
+.about img{width:100%;height:390px;object-fit:cover;border-radius:9px}
+.about p{color:#d6c9bd;line-height:1.9;margin-top:18px}
+.about h2{font-size:43px;margin-top:12px}
+.details{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.detail{background:white;border-radius:9px;padding:28px;text-align:center}
+.detail h3{font-size:23px;margin-bottom:13px}
+.detail p{color:var(--muted);line-height:1.8;font-size:14px}
+.contact{text-align:center;background:#eee2d2}
+.contact p{color:var(--muted);line-height:1.8;margin:15px auto;max-width:650px}
+footer{background:var(--dark);color:#d6c9bd;text-align:center;padding:35px 7%;font-size:13px;line-height:1.8}
+footer strong{color:white;font-family:Georgia,serif;font-size:20px}
+@media(max-width:760px){
+ header{flex-direction:column;padding:16px 5%}
+ nav{justify-content:center;gap:14px}
+ nav a{font-size:12px}
+ .hero{min-height:570px;padding:65px 7%}
+ section{padding:65px 7%}
+ .menu-grid,.specials,.details,.about{grid-template-columns:1fr}
+ .about img{height:270px}
+}
+</style>
+</head>
+<body>
+
+<header>
+ <div class="logo">SD <span>Cal Mellado</span></div>
+ <nav>
+  <a href="#inicio">Inicio</a>
+  <a href="#carta">Carta</a>
+  <a href="#nosotros">Nosotros</a>
+  <a href="#ubicacion">Ubicación</a>
+ </nav>
+</header>
+
+<main>
+<section class="hero" id="inicio">
+ <div class="hero-content">
+  <span class="eyebrow">Cocina tradicional · Constantí</span>
+  <h1>El sabor de siempre, como en casa.</h1>
+  <p>Almuerzos tradicionales y platos caseros para disfrutar de la buena cocina.</p>
+  <div class="actions">
+   <a class="btn gold" href="tel:+34656470335">☎ Llamar para reservar</a>
+   <a class="btn outline"
+   href="https://www.google.com/maps/dir/?api=1&destination=Carrer+Major+77,+43120+Constanti,+Tarragona"
+   target="_blank" rel="noopener">Cómo llegar ↗</a>
+  </div>
+ </div>
+</section>
+
+<section>
+ <div class="heading">
+  <small>Nuestra cocina</small>
+  <h2>Tradición en cada plato</h2>
+ </div>
+ <p class="intro">
+  Un bar de cocina tradicional donde disfrutar de almuerzos
+  y recetas de siempre. Descubre algunas de las especialidades
+  por las que se conoce a SD Cal Mellado.
+ </p>
+</section>
+
+<section class="menu" id="carta">
+ <div class="heading">
+  <small>Descubre nuestros platos</small>
+  <h2>Nuestra carta</h2>
+  <p style="color:#77695c;margin-top:12px">Especialidades y propuestas de cocina tradicional</p>
+ </div>
+
+ <div class="menu-grid">
+  <div class="menu-card">
+   <h3>🥘 Platos tradicionales</h3>
+   <div class="dish"><strong>Callos</strong><span class="price">Consultar precio</span></div>
+   <div class="dish"><strong>Rabo de toro</strong><span class="price">Consultar precio</span></div>
+   <div class="dish"><strong>Bacalao con samfaina</strong><span class="price">Consultar precio</span></div>
+   <div class="dish"><strong>Morro</strong><span class="price">Consultar precio</span></div>
+  </div>
+
+  <div class="menu-card">
+   <h3>🍖 Carnes y platos</h3>
+   <div class="dish"><strong>Carne de jabalí</strong><span class="price">Consultar precio</span></div>
+   <div class="dish"><strong>Carne de ciervo</strong><span class="price">Consultar precio</span></div>
+   <div class="dish"><strong>Sepia a la plancha</strong><span class="price">Consultar precio</span></div>
+   <div class="dish"><strong>Platos del día</strong><span class="price">Consultar precio</span></div>
+  </div>
+
+  <div class="menu-card">
+   <h3>🥖 Almuerzos</h3>
+   <div class="dish"><strong>Almuerzos tradicionales</strong><span class="price">Consultar precio</span></div>
+   <div class="dish"><strong>Bocadillos</strong><span class="price">Consultar precio</span></div>
+   <div class="dish"><strong>Platos de cuchara</strong><span class="price">Consultar precio</span></div>
+  </div>
+
+  <div class="menu-card">
+   <h3>☕ Bebidas y extras</h3>
+   <div class="dish"><strong>Café</strong><span class="price">Consultar precio</span></div>
+   <div class="dish"><strong>Refrescos</strong><span class="price">Consultar precio</span></div>
+   <div class="dish"><strong>Cerveza y vino</strong><span class="price">Consultar precio</span></div>
+   <div class="dish"><strong>Postres</strong><span class="price">Consultar precio</span></div>
+  </div>
+ </div>
+
+ <p class="menu-note">
+  Carta provisional elaborada a partir de referencias públicas.
+  Platos, disponibilidad, ingredientes, alérgenos y precios deben
+  ser confirmados por el establecimiento antes de publicar.
+ </p>
+ <div class="actions" style="justify-content:center">
+  <a class="btn darkbtn" href="tel:+34656470335">Consultar carta y precios por teléfono</a>
+ </div>
+</section>
+
+<section>
+ <div class="heading">
+  <small>Algunos de nuestros platos</small>
+  <h2>Especialidades destacadas</h2>
+ </div>
+ <div class="specials">
+  <article class="special">
+   <img src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=900&q=85" alt="Plato de cuchara">
+   <div><h3>Callos</h3><p>Un plato tradicional muy conocido entre los visitantes del bar.</p></div>
+  </article>
+  <article class="special">
+   <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=900&q=85" alt="Plato de carne">
+   <div><h3>Rabo de toro</h3><p>Una de las especialidades tradicionales que merece la pena descubrir.</p></div>
+  </article>
+  <article class="special">
+   <img src="https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?auto=format&fit=crop&w=900&q=85" alt="Plato de pescado">
+   <div><h3>Bacalao</h3><p>Bacalao con samfaina, una propuesta de cocina casera.</p></div>
+  </article>
+ </div>
+ <p class="menu-note">Fotografías ilustrativas, no son fotografías verificadas de los platos del establecimiento.</p>
+</section>
+
+<section class="about" id="nosotros">
+ <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1000&q=85" alt="Interior de restaurante">
+ <div>
+  <span class="eyebrow">SD Cal Mellado</span>
+  <h2>Un lugar para disfrutar de la buena comida</h2>
+  <p>
+   Ven a disfrutar de la cocina tradicional y de un buen almuerzo
+   en Constantí. Consulta directamente con el establecimiento
+   la disponibilidad de platos y menús.
+  </p>
+  <div class="actions">
+   <a class="btn gold" href="tel:+34656470335">Llamar al bar</a>
+  </div>
+ </div>
+</section>
+
+<section id="ubicacion">
+ <div class="heading">
+  <small>Estamos cerca de ti</small>
+  <h2>Ven a visitarnos</h2>
+ </div>
+ <div class="details">
+  <div class="detail">
+   <h3>📍 Dirección</h3>
+   <p>Carrer Major, 77<br>43120 Constantí<br>Tarragona</p>
+   <div class="actions" style="justify-content:center">
+    <a class="btn gold" href="https://www.google.com/maps/dir/?api=1&destination=Carrer+Major+77,+43120+Constanti,+Tarragona"
+    target="_blank" rel="noopener">Cómo llegar</a>
+   </div>
+  </div>
+  <div class="detail">
+   <h3>☎ Reservas</h3>
+   <p>Contacta directamente con el bar para consultar disponibilidad y hacer tu reserva.</p>
+   <div class="actions" style="justify-content:center">
+    <a class="btn gold" href="tel:+34656470335">656 47 03 35</a>
+   </div>
+  </div>
+  <div class="detail">
+   <h3>🕒 Horarios publicados</h3>
+   <p>
+    Lunes a viernes<br>08:00–11:00 y 13:00–15:30<br>
+    Sábado: 08:00–11:00<br>Domingo: cerrado
+   </p>
+   <p style="font-size:11px;margin-top:10px">Confirmar horarios con el bar antes de acudir.</p>
+  </div>
+ </div>
+</section>
+
+<section class="contact">
+ <div class="heading">
+  <small>Te esperamos</small>
+  <h2>¿Vienes a visitarnos?</h2>
+ </div>
+ <p>Llámanos para consultar una reserva o abre Google Maps para obtener indicaciones desde tu ubicación.</p>
+ <div class="actions" style="justify-content:center">
+  <a class="btn gold" href="tel:+34656470335">☎ Reservar por teléfono</a>
+  <a class="btn darkbtn"
+  href="https://www.google.com/maps/dir/?api=1&destination=Carrer+Major+77,+43120+Constanti,+Tarragona"
+  target="_blank" rel="noopener">📍 Cómo llegar con Maps</a>
+ </div>
+</section>
+</main>
+
+<footer>
+ <strong>Bar SD Cal Mellado</strong>
+ <p>Carrer Major, 77 · Constantí · Tarragona</p>
+ <p>Propuesta de demostración creada por WebLoriaStudio.</p>
+ <p>Diseño sujeto a revisión y autorización del establecimiento.</p>
+</footer>
+</body>
+</html>
